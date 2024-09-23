@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real Time Alarms</title>
+</head>
+<body>
+    <h1>Real Time Alarms Dashboard</h1>
+    {% for alarm in alarms %}
+        <div class="alarm-item">
+            <p>{{ alarm.description }}</p>
+            <!-- 显示其他告警相关的信息 -->
+        </div>
+    {% endfor %}
+</body>
+</html>
